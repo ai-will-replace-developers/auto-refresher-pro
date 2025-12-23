@@ -42,10 +42,10 @@ This is **Project #2** in my AI-built portfolio. Every project in my organizatio
 ###  The Organization
 
 All projects live under my GitHub organization. Each one is:
-- 🔨 **Built 100% by AI**
-- 📝 **Documented by AI**
-- 🎨 **Designed by AI**
-- 🐛 **Debugged by AI**
+-  **Built 100% by AI**
+-  **Documented by AI**
+-  **Designed by AI**
+-  **Debugged by AI**
 
 I am just the **instructor**. The AI is the **developer**.
 
@@ -61,7 +61,7 @@ The future is here. This repository is the proof.
 
 <div align="center">
 
-** Built with AI | Instructed by SRABON 🚀**
+** Built with AI | Instructed by SRABON **
 
 </div>
 
