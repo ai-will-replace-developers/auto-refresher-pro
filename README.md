@@ -2,7 +2,7 @@
 
 <div align="center">
 
-## 🤖 AI REPLACES DEVELOPERS — THE PROOF 🤖
+##  AI REPLACES DEVELOPERS — THE PROOF 
 
 </div>
 
@@ -16,7 +16,7 @@
 
 ---
 
-### 🎯 The Challenge
+###  The Challenge
 
 I created this challenge to prove a simple truth: **Developers are becoming obsolete.**
 
@@ -29,7 +29,7 @@ With AI, anyone can now build:
 
 **No coding knowledge required. Just ideas and instructions.**
 
-### 📁 This Repository
+###  This Repository
 
 This is **Project #2** in my AI-built portfolio. Every project in my organization demonstrates that:
 
@@ -39,7 +39,7 @@ This is **Project #2** in my AI-built portfolio. Every project in my organizatio
 4. **AI debugs and fixes issues** — It finds and resolves its own bugs
 5. **AI follows best practices** — Clean code, proper structure, documentation
 
-### 🏢 The Organization
+###  The Organization
 
 All projects live under my GitHub organization. Each one is:
 - 🔨 **Built 100% by AI**
@@ -49,7 +49,7 @@ All projects live under my GitHub organization. Each one is:
 
 I am just the **instructor**. The AI is the **developer**.
 
-### 💬 My Message
+###  My Message
 
 To all developers worried about their jobs: **Adapt or get left behind.**
 
@@ -61,7 +61,7 @@ The future is here. This repository is the proof.
 
 <div align="center">
 
-**🚀 Built with AI | Instructed by SRABON 🚀**
+** Built with AI | Instructed by SRABON 🚀**
 
 </div>
 
