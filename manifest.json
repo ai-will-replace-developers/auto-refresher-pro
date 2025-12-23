@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "AutoRefresher",
+  "short_name": "AutoRefresher",
+  "description": "Multi-tab auto-refresh extension - randomly picks and refreshes one tab at a time with random delays.",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "AutoRefresher",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "tabs", "alarms"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-auto-refresher": {
+      "suggested_key": {
+        "default": "Alt+R",
+        "mac": "Alt+R"
+      },
+      "description": "Toggle AutoRefresher on the current tab"
+    },
+    "refresh-now": {
+      "suggested_key": {
+        "default": "Alt+Shift+R",
+        "mac": "Alt+Shift+R"
+      },
+      "description": "Trigger an immediate refresh on the target tab"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoRefresher Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>AutoRefresher Settings</h1>
+      <p>Configure default settings for the extension</p>
+    </header>
+
+    <div class="card">
+      <h2>Default Timing</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="min-seconds">Min delay (seconds)</label>
+          <input type="number" id="min-seconds" min="3" max="7200" value="300">
+        </div>
+        <div class="form-group">
+          <label for="max-seconds">Max delay (seconds)</label>
+          <input type="number" id="max-seconds" min="3" max="7200" value="700">
+        </div>
+        <div class="form-group">
+          <label for="jitter">Jitter %</label>
+          <input type="number" id="jitter" min="0" max="80" value="8">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="checkbox-label">
+          <input type="checkbox" id="cache-bust">
+          <span>Bypass cache on refresh</span>
+        </label>
+      </div>
+
+      <button class="btn" id="save">Save Settings</button>
+      <div class="status" id="status"></div>
+    </div>
+
+    <div class="card">
+      <h2>Keyboard Shortcuts</h2>
+      <p>You can customize these in <code>chrome://extensions/shortcuts</code></p>
+      <ul>
+        <li><strong>Alt+R</strong> — Toggle auto-refresh</li>
+        <li><strong>Alt+Shift+R</strong> — Refresh now</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>About</h2>
+      <p>AutoRefresher v1.0.0</p>
+      <p>Randomized auto-refresh with smart jitter and cache-busting.</p>
+    </div>
+
+    <footer class="footer">BY SRABON</footer>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoRefresher</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 128 128">
+          <defs>
+            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#10b981"/>
+              <stop offset="100%" style="stop-color:#059669"/>
+            </linearGradient>
+          </defs>
+          <circle cx="64" cy="64" r="58" fill="url(#grad)"/>
+          <path d="M64 24 A40 40 0 1 1 24 64" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <polygon points="64,16 76,32 52,32" fill="#ffffff"/>
+          <circle cx="64" cy="64" r="12" fill="#ffffff"/>
+        </svg>
+        <span class="title">AutoRefresherPro</span>
+      </div>
+      <div class="status-badge" id="status-badge">Idle</div>
+    </header>
+
+    <!-- Add Tab Button -->
+    <button class="btn btn-add" id="btn-add">
+      <span class="btn-icon">+</span>
+      Add Current Tab
+    </button>
+
+    <!-- Tabs List -->
+    <div class="tabs-section">
+      <div class="tabs-header">
+        <span class="tabs-title">Active Tabs (<span id="tab-count">0</span>)</span>
+        <button class="btn-clear" id="btn-clear" title="Clear all tabs">Clear All</button>
+      </div>
+      <div class="tabs-list" id="tabs-list">
+        <div class="empty-state" id="empty-state">
+          No tabs added yet.<br>Click "Add Current Tab" to start.
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Controls -->
+    <div class="main-controls">
+      <button class="btn btn-primary" id="btn-toggle">
+        <span class="btn-icon" id="btn-icon">▶</span>
+        <span id="btn-text">Start</span>
+      </button>
+      <button class="btn btn-secondary" id="btn-refresh">
+        <span class="btn-icon">↻</span>
+        Refresh Now
+      </button>
+    </div>
+
+    <!-- Settings Card -->
+    <div class="card">
+      <div class="card-title">Timing (seconds)</div>
+      
+      <div class="presets">
+        <button class="preset" data-min="300" data-max="700">Normal</button>
+        <button class="preset" data-min="700" data-max="1000">Relaxed</button>
+        <button class="preset" data-min="1000" data-max="1500">Slow</button>
+      </div>
+
+      <div class="input-row">
+        <div class="input-group">
+          <label for="min-seconds">Min</label>
+          <input type="number" id="min-seconds" min="3" max="7200" value="300">
+        </div>
+        <div class="input-group">
+          <label for="max-seconds">Max</label>
+          <input type="number" id="max-seconds" min="3" max="7200" value="700">
+        </div>
+      </div>
+
+      <div class="toggle-row">
+        <label class="toggle">
+          <input type="checkbox" id="cache-bust">
+          <span class="toggle-track"></span>
+        </label>
+        <span class="toggle-label">Bypass cache</span>
+      </div>
+    </div>
+
+    <!-- Status Card -->
+    <div class="card status-card">
+      <div class="status-row">
+        <div class="status-item">
+          <div class="status-label">Next refresh</div>
+          <div class="status-value" id="countdown">--</div>
+        </div>
+        <div class="status-item">
+          <div class="status-label">Next tab</div>
+          <div class="status-value" id="next-tab">--</div>
+        </div>
+        <div class="status-item">
+          <div class="status-label">Cycles</div>
+          <div class="status-value" id="run-count">0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reset Button -->
+    <button class="btn btn-ghost" id="btn-reset">Reset Counter</button>
+
+    <!-- Error Message -->
+    <div class="error-message" id="error-message"></div>
+
+    <!-- Footer -->
+    <footer class="footer">BY SRABON</footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
