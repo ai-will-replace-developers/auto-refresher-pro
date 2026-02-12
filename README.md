@@ -107,6 +107,10 @@ A Chrome extension for multi-tab auto-refresh with random timing — randomly pi
 8. Each cycle, one random tab from your list will be refreshed
 9. Click **Stop** to pause
 
+## Screenshot
+
+![image alt](https://github.com/ai-will-replace-developers/auto-refresher-pro/blob/main/image.png?raw=true)
+
 ## Shortcuts
 
 - **Alt+R** — Toggle auto-refresh on/off
